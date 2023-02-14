@@ -1,0 +1,16 @@
+:root {
+	--fonte-principal: 'Bai Jamjuree', sans-serif;
+	--ciano: #26baa4;
+	--azul-claro: #6173ff;
+	--cinza-escuro: #4c545d;
+	--cinza-claro: #9fabb2;
+	--branco: #FFFFFF;
+}
+
+body {
+	font-family: var(--fonte-principal);
+	font-size: 18px;
+	line-height: normal;
+	box-sizing: border-box;
+}
+

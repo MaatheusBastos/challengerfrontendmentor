@@ -1,0 +1,262 @@
+body {
+	text-align: center;
+}
+
+section {
+	margin: 4rem 0;
+	padding: 0 2rem;
+}
+
+header, footer {
+	padding: 3rem 2rem;
+}
+
+.cabecalho {
+	background: url(../images/bg-header-mobile.png) no-repeat;
+}
+
+.cabecalho__logo {
+	padding: 3rem 0;
+}
+
+.titulo {
+	font-size: 1.8rem;
+	line-height: 42px;
+	font-weight: 700;
+	color: var(--cinza-escuro);
+}
+
+.texto {
+	line-height: 24px;
+	color: var(--cinza-claro);
+	padding: 1rem 0 2rem 0;
+	font-size: 1rem;
+}
+
+.botao {
+	display: block;
+	font-weight: 600;
+	border-radius: 30px;
+	color: var(--branco);
+	padding: 1rem 2rem;
+	margin: 1.5rem 0;
+	width: 80%;
+}
+
+.botao--ios {
+	background-color: var(--ciano);
+	box-shadow: 2px 2px 10px var(--ciano);
+}
+
+.botao--mac {
+	background-color: var(--azul-claro);
+	box-shadow: 2px 2px 10px var(--azul-claro);
+}
+
+.snippets__imagem {
+	width: 100%;
+	margin: 3rem 0 2rem 0;
+}
+
+
+.beneficios__item .titulo, .snippets__item .titulo{
+	font-size: 1.5rem;
+	line-height: 24px;
+}
+
+.viewport__imagem {
+	width: 100%;
+	padding: 2rem 0 4rem 0;
+}
+
+.item__icone {
+	padding: 2rem 0;
+}
+
+.item__logo {
+	padding: 2rem 0;
+}
+
+.rodape {
+	background: var(--cinza-claro);
+}
+
+.rodape__lista {
+	margin: 1rem 0;
+}
+
+.rodape__item {
+	padding: 1rem 0;
+}
+
+.rodape__link {
+	color: var(--cinza-escuro);
+	font-weight: 600;
+}
+
+.rodape__logo {
+	width: 15%;
+}
+
+.rodape__sociais {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.criador {
+	padding: 2rem 0 1rem 0;
+}
+
+.criador__nome {
+	color: var(--branco);
+	font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+
+	.cabecalho {
+		background: url(../images/bg-header-desktop.png) no-repeat;
+		background-size: contain;
+		padding: 3rem 30vw;
+	}
+
+	.cabecalho .titulo {
+		font-size: 2.25rem;
+	}
+
+	.titulo {
+		font-size: 2rem;
+	}
+
+	.botao {
+		display: inline-block;
+		width: 30%;
+		margin: 0 0.5rem;
+	}
+
+	.snippets__imagem {
+		float: left;
+		width: 50%;
+		margin: 0 5.5rem 5.5rem 0;
+	}
+
+	.snippets > .titulo, .snippets > .texto {
+		margin: 0 20vw;
+	}
+
+	.snippets > .titulo {
+		font-size: 2rem;
+	}
+
+	.snippets > .texto {
+		padding-bottom: 5rem;
+	}
+
+	.snippets__lista .titulo, .snippets__lista .texto {
+		text-align: left;
+	}
+
+	.snippets__lista {
+		padding: 0 10vw 0 0;
+	}
+
+	.viewport {
+		clear: left;
+		margin: 0;
+	}
+
+	.viewport > .titulo, .viewport > .texto {
+		margin: 0 20vw;
+	}
+
+	.viewport__imagem {
+		width: 75%;
+		padding: 3rem 0 2rem 0;
+	}
+
+	.beneficios {
+		margin: 6rem 0;
+	}
+
+	.beneficios__lista {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10vw;
+	}
+
+	.beneficios__item {
+		width: 33%;
+	}
+
+	.logos {
+		padding: 0 10vw;
+		margin: 6rem 0;
+	}
+
+	.logos__lista {
+		display: flex;
+		justify-content: space-around;
+		gap: 2rem;
+	}
+
+	.clip {
+		padding: 0 21vw;
+		margin: 6rem 0;
+	}
+
+	.rodape {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 3rem 10vw;
+	}
+
+	.rodape__logo {
+		width: 5%;
+		margin-right: 9rem;
+	}
+
+	.rodape__lista {
+		display: grid;
+		grid-template-columns: auto auto 1fr;
+		grid-template-areas: 
+		"faqs privacy install"
+		"contact press none";
+		column-gap: 5rem;
+		margin-right: auto;
+	}
+
+	.rodape__item {
+		text-align: left;
+		padding: 0.5rem 0;
+	}
+
+	.rodape__item:nth-child(1) {
+		grid-area: faqs;
+	}
+	
+	.rodape__item:nth-child(2) {
+		grid-area: contact;
+	}
+
+	.rodape__item:nth-child(3) {
+		grid-area: privacy;
+	}
+
+	.rodape__item:nth-child(4) {
+		grid-area: press;
+	}
+
+	.rodape__item:nth-child(5) {
+		grid-area: install;
+	}
+
+
+	.criador {
+		padding: 1rem 0;
+	}
+}
+
